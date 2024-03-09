@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Municipality Online - Construction Permits and Forms</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5 bg-body-secondary animated bounceInUp">
+      <div class="d-flex justify-content-center">
+        <h1>
+          TERRITORIAL PLANNING PROCESS <br />
+          URBAN CONTROL SUB-PROCESS <br />
+          CONSTRUCTION PERMIT REQUEST
+        </h1>
+      </div>
+
+      <form id="myForm" class="needs-validation" novalidate>
+        <div class="w-25 mb-3 row ms-1">
+          <label for="formDate" class="form-label">Form date:</label>
+          <input type="date" class="form-control" id="formDate" required />
+          <div class="invalid-feedback">Is necesary to select a date</div>
+        </div>
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <h2 class="mb-3">Owner information:</h2>
+            <div class="ms-3">
+              <div class="mb-3 row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control w-50"
+                    id="txtOwnerName"
+                    placeholder="Owner's name"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entry a name
+                  </div>
+                </div>
+                <div class="col from-group">
+                  <input
+                    type="number"
+                    class="form-control w-50"
+                    id="txtIdentification"
+                    placeholder="Owner identification"
+                    required
+                  />
+                  <div class="invalid-feedback">Is necesary to entry an id</div>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col">
+                  <div>
+                    <input
+                      type="number"
+                      class="form-control w-50"
+                      id="txtPhone"
+                      placeholder="Phone number"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Is necesary to entry a phone number
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <input
+                      type="number"
+                      class="form-control w-50"
+                      id="txtOptPhone"
+                      placeholder="Optional phone number"
+                    />
+                    <div class="valid-feedback">
+                      Optional phone number can be empty
+                    </div>
+                    <div class="invalid-feedback">
+                      Is necesary to entry a optional phone number
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <input
+                    type="email"
+                    class="form-control w-50"
+                    id="txtEmail"
+                    placeholder="Email"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entry a valid email
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <input
+                  class="form-control w-75 ms-2"
+                  type="text"
+                  id="txtAddress"
+                  placeholder="Address"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Is necesary to entry an address
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <h2 class="mb-3">Property location:</h2>
+            <div class="ms-3">
+              <div class="mb-3 row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control w-50"
+                    id="txtDistrict"
+                    placeholder="District"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entry a valid district
+                  </div>
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control w-50"
+                    id="txtNeighborhood"
+                    placeholder="Neighborhood"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entry a neighborhood
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <input
+                  type="text"
+                  class="w-75 form-control ms-2"
+                  id="txtExactAddress"
+                  placeholder="Exact address"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Is necesary to entry an exact address
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <input
+                  type="text"
+                  class="w-75 form-control ms-2"
+                  id="txtOtherSings"
+                  placeholder="Other signs"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Is necesary to entry more datails
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <h2 class="mb-3">Inscription in the public registry</h2>
+
+            <div class="ms-3">
+              <div class="mb-3 row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control w-50"
+                    id="txtFolio"
+                    placeholder="Folio:"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entry a valid folio
+                  </div>
+                </div>
+                <div class="col">
+                  <input
+                    type="number"
+                    class="form-control w-50"
+                    id="txtPublicStreet"
+                    placeholder="In front of public street (mts):"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entrer a valid number of meters
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col">
+                  <input
+                    type="number"
+                    id="txtLandArea"
+                    class="form-control w-50"
+                    placeholder="Land area (mts2)"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entry a valid land area information
+                  </div>
+                </div>
+                <div class="col">
+                  <input
+                    type="number"
+                    id="txtPlanNumber"
+                    class="form-control w-50"
+                    placeholder="Registered plan number"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entry a valid plan number
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <h2 class="mb-3">Permission for:</h2>
+            <div class="ms-3">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio1"
+                  name="tggPermisionFor"
+                  checked
+                />
+                <label class="form-check-label" for="radio1">Build</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio2"
+                  name="tggPermisionFor"
+                />
+                <label class="form-check-label" for="radio2">Remodel</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio3"
+                  name="tggPermisionFor"
+                />
+                <label class="form-check-label" for="radio3">Demolition</label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radioPermisionFor"
+                  name="tggPermisionFor"
+                />
+                <label class="form-check-label" for="radioPermisionFor"
+                  >Other</label
+                >
+                <input
+                  type="text"
+                  id="inputPermisionFor"
+                  class="form-control w-25"
+                  disabled
+                />
+                <div
+                  id="errorMsgPermission"
+                  class="form-text text-danger"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <h2>Kind of work</h2>
+            <div class="ms-3">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio5"
+                  name="kindRad"
+                  checked
+                />
+                <label class="form-check-label" for="radio5"
+                  >Living place</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio6"
+                  name="kindRad"
+                />
+                <label class="form-check-label" for="radio6">Offices</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio7"
+                  name="kindRad"
+                />
+                <label class="form-check-label" for="radio7">Shop</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio8"
+                  name="kindRad"
+                />
+                <label class="form-check-label" for="radio8"
+                  >Urbanization</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio9"
+                  name="kindRad"
+                />
+                <label class="form-check-label" for="radio9"
+                  >Housing complex</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio10"
+                  name="kindRad"
+                />
+                <label class="form-check-label" for="radio10"
+                  >Condominium</label
+                >
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radioKindOfWork"
+                  name="kindRad"
+                />
+                <label class="form-check-label" for="radioKindOfWork"
+                  >Other</label
+                >
+                <input
+                  type="text"
+                  id="inputKindOfWork"
+                  class="form-control w-25"
+                  disabled
+                />
+                <div
+                  id="errorMsgKindOfWork"
+                  class="form-text text-danger"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <h2 class="mb-3">Building area</h2>
+            <div class="ms-3 mb-3">
+              <div class="row mb-3">
+                <div class="ms-3">
+                  <input
+                    type="number"
+                    id="txtSquareMts"
+                    class="form-control w-25"
+                    placeholder="Square meter"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entry a valid building area
+                  </div>
+                </div>
+              </div>
+              <div class="row ms-3">
+                <input
+                  type="number"
+                  id="txtNumberFloors"
+                  class="form-control w-25"
+                  placeholder="Number of floors"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Is necesary to entry number of floors
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <h2 class="mb-3">Value of the work</h2>
+            <div class="ms-3 mb-3">
+              <div class="row mb-3">
+                <div class="ms-3">
+                  <input
+                    type="number"
+                    id="txtTotalCost"
+                    class="form-control w-25"
+                    placeholder="Total cost"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Is necesary to entry the total cost
+                  </div>
+                </div>
+              </div>
+              <div class="row ms-3">
+                <input
+                  type="number"
+                  id="txtValueM2"
+                  class="form-control w-25"
+                  placeholder="Value m2"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Is necesary to entry the square meter value
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <h2 class="mb-3">Predominant materials</h2>
+            <div class="row">
+              <div class="col d-flex justify-content-center align-items-center">
+                <label>Floors</label>
+              </div>
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="mb-3 row">
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioA"
+                        name="kindFloor"
+                        checked
+                      />
+                      <label class="form-check-label" for="radioA"
+                        >Concrete</label
+                      >
+                    </div>
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioB"
+                        name="kindFloor"
+                      />
+                      <label class="form-check-label" for="radioB"
+                        >Mosaic</label
+                      >
+                    </div>
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioC"
+                        name="kindFloor"
+                      />
+                      <label class="form-check-label" for="radioC"
+                        >Ceramics</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioD"
+                        name="kindFloor"
+                        value="luxurious"
+                      />
+                      <label class="form-check-label" for="radioD"
+                        >Luxurious</label
+                      >
+                    </div>
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioE"
+                        name="kindFloor"
+                        value="wood"
+                      />
+                      <label class="form-check-label" for="radioE">Wood</label>
+                    </div>
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioKindOfFloors"
+                        name="kindFloor"
+                      />
+                      <label class="form-check-label" for="radioKindOfFloors"
+                        >Other</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputKindOfFloors"
+                        disabled
+                      />
+                      <div
+                        id="errorMsgKindOfFloors"
+                        class="form-text text-danger"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 row">
+              <div class="col d-flex justify-content-center align-items-center">
+                <label>Walls</label>
+              </div>
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="mb-3 row">
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioAA"
+                        name="kindWalls"
+                        value="block"
+                        checked
+                      />
+                      <label class="form-check-label" for="radioAA"
+                        >Block</label
+                      >
+                    </div>
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioAB"
+                        name="kindWalls"
+                        value="prefabricated"
+                      />
+                      <label class="form-check-label" for="radioAB"
+                        >Prefabricated</label
+                      >
+                    </div>
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioAC"
+                        name="kindWalls"
+                        value="fibrolit"
+                      />
+                      <label class="form-check-label" for="radioAC"
+                        >Fibrolit</label
+                      >
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioAD"
+                        name="kindWalls"
+                        value="baseboard"
+                      />
+                      <label class="form-check-label" for="radioAD"
+                        >Baseboard</label
+                      >
+                    </div>
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioAE"
+                        name="kindWalls"
+                        value="wood"
+                      />
+                      <label class="form-check-label" for="radioAE">Wood</label>
+                    </div>
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioKindOfWalls"
+                        name="kindWalls"
+                        value="other"
+                      />
+                      <label class="form-check-label" for="radioKindOfWalls"
+                        >Other</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputKindOfWalls"
+                        disabled
+                      />
+                      <div
+                        id="errorMsgKindOfWalls"
+                        class="form-text text-danger"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 row">
+              <div class="col d-flex justify-content-center align-items-center">
+                <label>Roof</label>
+              </div>
+              <div class="col">
+                <div class="mb-3 row">
+                  <div class="col form-check">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="radioBA"
+                      name="kindRoof"
+                      value="galvanizedIron"
+                      checked
+                    />
+                    <label class="form-check-label" for="radioBA"
+                      >Galvanized iron</label
+                    >
+                  </div>
+                  <div class="col form-check">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="radioBB"
+                      name="kindRoof"
+                      value="galvanizedTile"
+                    />
+                    <label class="form-check-label" for="radioBB"
+                      >Galvanized tile</label
+                    >
+                  </div>
+                  <div class="col form-check">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="radioBC"
+                      name="kindRoof"
+                      value="polycarbonate"
+                    />
+                    <label class="form-check-label" for="radioBC"
+                      >Polycarbonate</label
+                    >
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col form-check">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="radioBD"
+                      name="kindRoof"
+                      value="structuralSheet"
+                    />
+                    <label class="form-check-label" for="radioBD"
+                      >Structural sheet</label
+                    >
+                  </div>
+                  <div class="col form-check">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="radioBE"
+                      name="kindRoof"
+                      value="roofTile"
+                    />
+                    <label class="form-check-label" for="radioBE"
+                      >Roof tile</label
+                    >
+                  </div>
+                  <div class="col form-check">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="radioKindOfRoof"
+                      name="kindRoof"
+                      value="other"
+                    />Other
+                    <label
+                      class="form-check-label"
+                      for="radioKindOfRoof"
+                    ></label>
+                    <input
+                      type="text"
+                      id="inputKindOfRoof"
+                      class="form-control"
+                      disabled
+                    />
+                    <div
+                      id="errorMsgKindOfRoof"
+                      class="form-text text-danger"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <h2 class="mb-3">Estimated duration of the work to be done</h2>
+            <div class="ms-3">
+              <div class="row mb-3">
+                <div class="col form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radioTimeD"
+                    name="time"
+                    value="days"
+                    checked
+                  />
+                  <input
+                    type="number"
+                    id="inputTimeD"
+                    class="w-50 form-control"
+                    placeholder="Days"
+                  />
+                  <div id="errorMsgTimeD" class="form-text text-danger"></div>
+                </div>
+                <div class="col form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radioTimeM"
+                    name="time"
+                    value="months"
+                  />
+                  <input
+                    type="number"
+                    id="inputTimeM"
+                    class="w-50 form-control"
+                    placeholder="Months"
+                    disabled
+                  />
+                  <div id="errorMsgTimeM" class="form-text text-danger"></div>
+                </div>
+                <div class="col form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radioTimeY"
+                    name="time"
+                    value="years"
+                  />
+                  <input
+                    type="number"
+                    id="inputTimeY"
+                    class="w-50 form-control"
+                    placeholder="Years"
+                    disabled
+                  />
+                  <div id="errorMsgTimeY" class="form-text text-danger"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3 border border-dark">
+          <div class="ms-3">
+            <div class="w-75 row">
+              <div class="col">
+                <h2 class="mb-3">Sidewalk closure</h2>
+                <div class="ms-3">
+                  <div class="row">
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioSideCloseD"
+                        name="sideClose"
+                        value="days"
+                        checked
+                      />
+                      <input
+                        type="number"
+                        id="inputSideCloseD"
+                        class="w-50 form-control"
+                        placeholder="Days"
+                      />
+                      <div
+                        id="errorMsgSideCloseD"
+                        class="form-text text-danger"
+                      ></div>
+                    </div>
+
+                    <div class="col form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="radioSideCloseM"
+                        name="sideClose"
+                        value="months"
+                      />
+                      <input
+                        type="number"
+                        id="inputSideCloseM"
+                        class="w-50 form-control"
+                        placeholder="Months"
+                        disabled
+                      />
+                      <div
+                        id="errorMsgSideCloseM"
+                        class="form-text text-danger"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col form-check">
+                  <div class="row mb-3">
+                    <h3>Date</h3>
+                    <div class="col">
+                      <label>From: </label>
+                      <input
+                        type="date"
+                        class="form-control w-50"
+                        id="sideCloseFrom"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Is necesary to entry a valid date
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label>To: </label>
+                      <input
+                        type="date"
+                        class="form-control w-50"
+                        id="sideCloseTo"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Is necesary to entry a valid date
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="border border-dark">
+          <div class="ms-3">
+            <h2 class="mb-3">Financing</h2>
+            <div class="ms-3">
+              <div class="row">
+                <div class="col form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="financingBank"
+                    name="finance"
+                    value="bank"
+                    checked
+                  />
+                  <label class="form-check-label" for="financingBank"
+                    >Bank</label
+                  >
+                </div>
+                <div class="col form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="financingHouBonus"
+                    name="finance"
+                    value="housingBonus"
+                  />
+                  <label class="form-check-label" for="financingHouBonus"
+                    >Housing bonus</label
+                  >
+                </div>
+                <div class="col form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="financingExon"
+                    name="finance"
+                    value="exonerated"
+                  />
+                  <label class="form-check-label" for="financingExon"
+                    >Exonerated</label
+                  >
+                </div>
+                <div class="col form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radioFinancing"
+                    name="finance"
+                    value="other"
+                  />
+                  <label class="form-check-label" for="radioFinancing"
+                    >Other</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputFinancing"
+                    disabled
+                  />
+                  <div
+                    id="errorMsgFinancing"
+                    class="form-text text-danger"
+                  ></div>
+                </div>
+              </div>
+              <div class="mb-5"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-3">
+          <div class="row mb-5 mt-5">
+            <div class="col">
+              <label
+                >Name and signature of the professional responsible for the
+                work</label
+              >
+            </div>
+            <div class="col">
+              <label>Identification</label>
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col">
+              <label>Owner's signature</label>
+            </div>
+            <div class="col">
+              <label>Identification</label>
+            </div>
+          </div>
+        </section>
+
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary w-50">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      (() => {
+        "use strict";
+
+        const forms = document.querySelectorAll(".needs-validation");
+
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+
+    <script>
+      // Obtén el formulario y los elementos relevantes
+      const myFirstForm = document.getElementById("myForm");
+      const radioPermision = document.getElementById("radioPermisionFor");
+      const radioKindWork = document.getElementById("radioKindOfWork");
+      const radioFloors = document.getElementById("radioKindOfFloors");
+      const radioWalls = document.getElementById("radioKindOfWalls");
+      const radioRoof = document.getElementById("radioKindOfRoof");
+      const radioEstimatedDays = document.getElementById("radioTimeD");
+      const radioEstimatedMonths = document.getElementById("radioTimeM");
+      const radioEstimatedYears = document.getElementById("radioTimeY");
+      const radioSidewalkDays = document.getElementById("radioSideCloseD");
+      const radioSidewalkMonths = document.getElementById("radioSideCloseM");
+      const radioFinancing = document.getElementById("radioFinancing");
+
+      const inputPermision = document.getElementById("inputPermisionFor");
+      const inputKindWork = document.getElementById("inputKindOfWork");
+      const inputFloors = document.getElementById("inputKindOfFloors");
+      const inputWalls = document.getElementById("inputKindOfWalls");
+      const inputRoof = document.getElementById("inputKindOfRoof");
+      const inputEstimatedDays = document.getElementById("inputTimeD");
+      const inputEstimatedMonths = document.getElementById("inputTimeM");
+      const inputEstimatedYears = document.getElementById("inputTimeY");
+      const inputSidewalkDays = document.getElementById("inputSideCloseD");
+      const inputSidewalkMonths = document.getElementById("inputSideCloseM");
+      const inputFinancing = document.getElementById("inputFinancing");
+
+      const errorMsgPermision = document.getElementById("errorMsgPermission");
+      const errorMsgKindWork = document.getElementById("errorMsgKindOfWork");
+      const errorMsgKindFloors = document.getElementById(
+        "errorMsgKindOfFloors"
+      );
+      const errorMsgKindWalls = document.getElementById("errorMsgKindOfWalls");
+      const errorMsgKindRoof = document.getElementById("errorMsgKindOfRoof");
+      const errorMsgEstimatedDays = document.getElementById("errorMsgTimeD");
+      const errorMsgEstimatedMonths = document.getElementById("errorMsgTimeM");
+      const errorMsgEstimatedYears = document.getElementById("errorMsgTimeY");
+      const errorMsgSideCloseDays =
+        document.getElementById("errorMsgSideCloseD");
+      const errorMsgSideCloseMonths =
+        document.getElementById("errorMsgSideCloseM");
+      const errorMsgFinance = document.getElementById("errorMsgFinancing");
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (radioPermision.checked && inputPermision.value.trim() === "") {
+          errorMsgPermision.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgPermision.textContent = "";
+        }
+      });
+
+      radioPermision.addEventListener("change", function () {
+        inputPermision.disabled = !radioPermision.checked;
+        errorMsgPermision.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (radioKindWork.checked && inputKindWork.value.trim() === "") {
+          errorMsgKindWork.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgKindWork.textContent = "";
+        }
+      });
+
+      radioKindWork.addEventListener("change", function () {
+        inputKindWork.disabled = !radioKindWork.checked;
+        errorMsgKindWork.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (radioFloors.checked && inputFloors.value.trim() === "") {
+          errorMsgKindFloors.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgKindFloors.textContent = "";
+        }
+      });
+
+      radioFloors.addEventListener("change", function () {
+        inputFloors.disabled = !radioFloors.checked;
+        errorMsgKindFloors.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (radioWalls.checked && inputWalls.value.trim() === "") {
+          errorMsgKindWalls.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgKindWalls.textContent = "";
+        }
+      });
+
+      radioWalls.addEventListener("change", function () {
+        inputWalls.disabled = !radioWalls.checked;
+        errorMsgKindWalls.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (radioRoof.checked && inputRoof.value.trim() === "") {
+          errorMsgKindRoof.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgKindRoof.textContent = "";
+        }
+      });
+
+      radioRoof.addEventListener("change", function () {
+        inputRoof.disabled = !radioRoof.checked;
+        errorMsgKindRoof.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (
+          radioEstimatedDays.checked &&
+          inputEstimatedDays.value.trim() === ""
+        ) {
+          errorMsgEstimatedDays.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgEstimatedDays.textContent = "";
+        }
+      });
+
+      radioEstimatedDays.addEventListener("change", function () {
+        inputEstimatedDays.disabled = !radioEstimatedDays.checked;
+        errorMsgEstimatedDays.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (
+          radioEstimatedMonths.checked &&
+          inputEstimatedMonths.value.trim() === ""
+        ) {
+          errorMsgEstimatedMonths.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgEstimatedMonths.textContent = "";
+        }
+      });
+
+      radioEstimatedMonths.addEventListener("change", function () {
+        inputEstimatedMonths.disabled = !radioEstimatedMonths.checked;
+        errorMsgEstimatedMonths.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (
+          radioEstimatedYears.checked &&
+          inputEstimatedYears.value.trim() === ""
+        ) {
+          errorMsgEstimatedYears.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgEstimatedYears.textContent = "";
+        }
+      });
+
+      radioEstimatedYears.addEventListener("change", function () {
+        inputEstimatedYears.disabled = !radioEstimatedYears.checked;
+        errorMsgEstimatedYears.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (
+          radioSidewalkDays.checked &&
+          inputSidewalkDays.value.trim() === ""
+        ) {
+          errorMsgSideCloseDays.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgSideCloseDays.textContent = "";
+        }
+      });
+
+      radioSidewalkDays.addEventListener("change", function () {
+        inputSidewalkDays.disabled = !radioSidewalkDays.checked;
+        errorMsgSideCloseDays.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (
+          radioSidewalkMonths.checked &&
+          inputSidewalkMonths.value.trim() === ""
+        ) {
+          errorMsgSideCloseMonths.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgSideCloseMonths.textContent = "";
+        }
+      });
+
+      radioSidewalkMonths.addEventListener("change", function () {
+        inputSidewalkMonths.disabled = !radioSidewalkMonths.checked;
+        errorMsgSideCloseMonths.textContent = "";
+      });
+
+      myFirstForm.addEventListener("submit", function (event) {
+        if (
+          radioFinancing.checked &&
+          inputFinancing.value.trim() === ""
+        ) {
+          errorMsgFinance.textContent =
+            "Is necesary to add more information here.";
+          event.preventDefault();
+        } else {
+          errorMsgFinance.textContent = "";
+        }
+      });
+
+      radioFinancing.addEventListener("change", function () {
+        inputFinancing.disabled = !radioFinancing.checked;
+        errorMsgFinance.textContent = "";
+      });
+    </script>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
