@@ -6,15 +6,15 @@
     <title>City Municipality Online - Construction Permits and Forms</title>
     <link
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
   <body>
-    <div class="container mt-5 bg-body-secondary animated bounceInUp">
+    <div class="container mt-5 bg-body-secondary">
       <div class="d-flex justify-content-center">
         <h1>
           TERRITORIAL PLANNING PROCESS <br />
@@ -35,11 +35,11 @@
             <div class="ms-3">
               <div class="mb-3 row">
                 <div class="col">
+                  <label for="txtOwnerName">Name</label>
                   <input
                     type="text"
                     class="form-control w-50"
                     id="txtOwnerName"
-                    placeholder="Owner's name"
                     required
                   />
                   <div class="invalid-feedback">
@@ -47,11 +47,11 @@
                   </div>
                 </div>
                 <div class="col from-group">
+                  <label>Identification</label>
                   <input
                     type="number"
                     class="form-control w-50"
                     id="txtIdentification"
-                    placeholder="Owner identification"
                     required
                   />
                   <div class="invalid-feedback">Is necesary to entry an id</div>
@@ -60,11 +60,11 @@
               <div class="mb-3 row">
                 <div class="col">
                   <div>
+                    <label>Phone number</label>
                     <input
                       type="number"
                       class="form-control w-50"
                       id="txtPhone"
-                      placeholder="Phone number"
                       required
                     />
                     <div class="invalid-feedback">
@@ -72,11 +72,11 @@
                     </div>
                   </div>
                   <div class="mt-3">
+                    <label>Optional phone number</label>
                     <input
                       type="number"
                       class="form-control w-50"
                       id="txtOptPhone"
-                      placeholder="Optional phone number"
                     />
                     <div class="valid-feedback">
                       Optional phone number can be empty
@@ -87,11 +87,11 @@
                   </div>
                 </div>
                 <div class="col">
+                  <label>Email</label>
                   <input
                     type="email"
                     class="form-control w-50"
                     id="txtEmail"
-                    placeholder="Email"
                     required
                   />
                   <div class="invalid-feedback">
@@ -100,11 +100,11 @@
                 </div>
               </div>
               <div class="mb-3 row">
+                <label>Address</label>
                 <input
                   class="form-control w-75 ms-2"
                   type="text"
                   id="txtAddress"
-                  placeholder="Address"
                   required
                 />
                 <div class="invalid-feedback">
@@ -121,11 +121,11 @@
             <div class="ms-3">
               <div class="mb-3 row">
                 <div class="col">
+                  <label>District</label>
                   <input
                     type="text"
                     class="form-control w-50"
                     id="txtDistrict"
-                    placeholder="District"
                     required
                   />
                   <div class="invalid-feedback">
@@ -133,11 +133,11 @@
                   </div>
                 </div>
                 <div class="col">
+                  <label>Neighborhood</label>
                   <input
                     type="text"
                     class="form-control w-50"
                     id="txtNeighborhood"
-                    placeholder="Neighborhood"
                     required
                   />
                   <div class="invalid-feedback">
@@ -146,11 +146,11 @@
                 </div>
               </div>
               <div class="mb-3 row">
+                <label>Exact address</label>
                 <input
                   type="text"
                   class="w-75 form-control ms-2"
                   id="txtExactAddress"
-                  placeholder="Exact address"
                   required
                 />
                 <div class="invalid-feedback">
@@ -158,11 +158,11 @@
                 </div>
               </div>
               <div class="mb-3 row">
+                <label>Other sings</label>
                 <input
                   type="text"
                   class="w-75 form-control ms-2"
                   id="txtOtherSings"
-                  placeholder="Other signs"
                   required
                 />
                 <div class="invalid-feedback">
@@ -180,11 +180,11 @@
             <div class="ms-3">
               <div class="mb-3 row">
                 <div class="col">
+                  <label>Folio</label>
                   <input
                     type="text"
                     class="form-control w-50"
                     id="txtFolio"
-                    placeholder="Folio:"
                     required
                   />
                   <div class="invalid-feedback">
@@ -192,11 +192,11 @@
                   </div>
                 </div>
                 <div class="col">
+                  <label>In front of public street (mts)</label>
                   <input
                     type="number"
                     class="form-control w-50"
                     id="txtPublicStreet"
-                    placeholder="In front of public street (mts):"
                     required
                   />
                   <div class="invalid-feedback">
@@ -206,11 +206,11 @@
               </div>
               <div class="mb-3 row">
                 <div class="col">
+                  <label>Land area (mts2)</label>
                   <input
                     type="number"
                     id="txtLandArea"
                     class="form-control w-50"
-                    placeholder="Land area (mts2)"
                     required
                   />
                   <div class="invalid-feedback">
@@ -218,11 +218,11 @@
                   </div>
                 </div>
                 <div class="col">
+                  <label>Registered plan number</label>
                   <input
                     type="number"
                     id="txtPlanNumber"
                     class="form-control w-50"
-                    placeholder="Registered plan number"
                     required
                   />
                   <div class="invalid-feedback">
@@ -388,25 +388,23 @@
             <h2 class="mb-3">Building area</h2>
             <div class="ms-3 mb-3">
               <div class="row mb-3">
-                <div class="ms-3">
-                  <input
-                    type="number"
-                    id="txtSquareMts"
-                    class="form-control w-25"
-                    placeholder="Square meter"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Is necesary to entry a valid building area
-                  </div>
+                <label>Square meter</label>
+                <input
+                  type="number"
+                  id="txtSquareMts"
+                  class="form-control w-25"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Is necesary to entry a valid building area
                 </div>
               </div>
-              <div class="row ms-3">
+              <div class="row">
+                <label>Number of floors</label>
                 <input
                   type="number"
                   id="txtNumberFloors"
                   class="form-control w-25"
-                  placeholder="Number of floors"
                   required
                 />
                 <div class="invalid-feedback">
@@ -418,29 +416,27 @@
         </section>
 
         <section class="mb-3 border border-dark">
-          <div class="ms-3">
+          <div class="ms-3 mb-3">
             <h2 class="mb-3">Value of the work</h2>
-            <div class="ms-3 mb-3">
+            <div class="ms-3">
               <div class="row mb-3">
-                <div class="ms-3">
-                  <input
-                    type="number"
-                    id="txtTotalCost"
-                    class="form-control w-25"
-                    placeholder="Total cost"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Is necesary to entry the total cost
-                  </div>
+                <label>Total cost</label>
+                <input
+                  type="number"
+                  id="txtTotalCost"
+                  class="form-control w-25"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Is necesary to entry the total cost
                 </div>
               </div>
-              <div class="row ms-3">
+              <div class="row">
+                <label>Value mts2</label>
                 <input
                   type="number"
                   id="txtValueM2"
                   class="form-control w-25"
-                  placeholder="Value m2"
                   required
                 />
                 <div class="invalid-feedback">
@@ -750,14 +746,13 @@
                     class="form-check-input"
                     id="radioTimeD"
                     name="time"
-                    value="days"
                     checked
                   />
+                  <label for="inputTimeD">Days</label>
                   <input
                     type="number"
                     id="inputTimeD"
                     class="w-50 form-control"
-                    placeholder="Days"
                   />
                   <div id="errorMsgTimeD" class="form-text text-danger"></div>
                 </div>
@@ -769,11 +764,11 @@
                     name="time"
                     value="months"
                   />
+                  <label for="inputTimeM">Months</label>
                   <input
                     type="number"
                     id="inputTimeM"
                     class="w-50 form-control"
-                    placeholder="Months"
                     disabled
                   />
                   <div id="errorMsgTimeM" class="form-text text-danger"></div>
@@ -786,11 +781,11 @@
                     name="time"
                     value="years"
                   />
+                  <label for="inputTimeY">Years</label>
                   <input
                     type="number"
                     id="inputTimeY"
                     class="w-50 form-control"
-                    placeholder="Years"
                     disabled
                   />
                   <div id="errorMsgTimeY" class="form-text text-danger"></div>
@@ -816,11 +811,11 @@
                         value="days"
                         checked
                       />
+                      <label for="inputSideCloseD">Days</label>
                       <input
                         type="number"
                         id="inputSideCloseD"
                         class="w-50 form-control"
-                        placeholder="Days"
                       />
                       <div
                         id="errorMsgSideCloseD"
@@ -836,11 +831,11 @@
                         name="sideClose"
                         value="months"
                       />
+                      <label for="inputSideCloseM">Months</label>
                       <input
                         type="number"
                         id="inputSideCloseM"
                         class="w-50 form-control"
-                        placeholder="Months"
                         disabled
                       />
                       <div
@@ -978,13 +973,54 @@
           </div>
         </section>
 
-        <div class="d-flex justify-content-center">
-          <button type="submit" class="btn btn-primary w-50">Submit</button>
+        <div class="d-flex justify-content-center col mb-5">
+          <button
+            type="submit"
+            class="btn btn-primary w-50"
+            onclick="submitForm()"
+            id="btnSubmit"
+          >
+            Submit
+          </button>
+          <a
+            href="/archives/forpermisoconstruccion.pdf"
+            download="CompanyXYZ_Form"
+            class="btn btn-success ms-3 w-50"
+            id="sendForm"
+            onclick="sendForm()"
+            >Download form</a
+          >
         </div>
       </form>
     </div>
 
     <script>
+      function submitForm() {
+        var formSent = document.getElementById("btnSubmit");
+        formSent.classList.add("animate__animated", "animate__bounceOut");
+
+        formSent.addEventListener("animationend", function () {
+          formSent.classList.remove("animate__animated", "animate__bounceOut");
+        });
+      }
+    </script>
+
+    <script>
+      function sendForm() {
+        var formSent = document.getElementById("sendForm");
+        formSent.classList.add("animate__animated", "animate__bounceOutRight");
+
+        formSent.addEventListener("animationend", function () {
+          formSent.classList.remove(
+            "animate__animated",
+            "animate__bounceOutRight"
+          );
+        });
+      }
+    </script>
+
+    <script>
+      //scrip to evaluate empty inputs
       (() => {
         "use strict";
 
@@ -1008,7 +1044,8 @@
     </script>
 
     <script>
-      // Obtén el formulario y los elementos relevantes
+      //Script to evaluate the inputs next to each radio button
+
       const myFirstForm = document.getElementById("myForm");
       const radioPermision = document.getElementById("radioPermisionFor");
       const radioKindWork = document.getElementById("radioKindOfWork");
@@ -1216,10 +1253,7 @@
       });
 
       myFirstForm.addEventListener("submit", function (event) {
-        if (
-          radioFinancing.checked &&
-          inputFinancing.value.trim() === ""
-        ) {
+        if (radioFinancing.checked && inputFinancing.value.trim() === "") {
           errorMsgFinance.textContent =
             "Is necesary to add more information here.";
           event.preventDefault();
