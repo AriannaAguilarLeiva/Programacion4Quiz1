@@ -6,109 +6,155 @@
     <title>City Municipality Online - Construction Permits and Forms</title>
     <link
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
-  <body>
-    <div class="container mt-5 bg-body-secondary animated bounceInUp">
+  <body class="bg-secondary">
+    <header class="row bg-secondary text-center border-bottom border-white">
+      <div>
+        <h1 class="text-white pt-2">
+          Agencia asesora de servicios de construcción J&A
+        </h1>
+      </div>
       <div class="d-flex justify-content-center">
-        <h1>
-          TERRITORIAL PLANNING PROCESS <br />
-          URBAN CONTROL SUB-PROCESS <br />
-          CONSTRUCTION PERMIT REQUEST
+        <ul class="list-unstyled d-flex mt-2">
+          <li>
+            <a href="#"
+              ><img
+                class="img-fluid mx-1"
+                src="../img/facebook.png"
+                alt="Logo de facebook"
+                width="50px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="img-fluid mx-1"
+                src="../img/instagram.png"
+                alt="Logo de instagram"
+                width="50px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="img-fluid mx-1"
+                src="../img/youtube.png"
+                alt="Logo de youtube"
+                width="50px"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container mt-5 bg-body-secondary">
+      <div class="d-flex justify-content-center">
+        <h1 class="mb-5">
+          <div class="col-12 d-flex justify-content-center">
+            <label>PROCESO DE PLANIFICACIÓN TERRITORIAL</label>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <label>SUBPROCESO DE CONTROL URBANO</label>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <label>SOLICITUD DE PERMISO DE CONSTRUCCIÓN</label>
+          </div>
         </h1>
       </div>
 
       <form id="myForm" class="needs-validation" novalidate>
         <div class="w-25 mb-3 row ms-1">
-          <label for="formDate" class="form-label">Form date:</label>
+          <label for="formDate" class="form-label">Fecha del formulario:</label>
           <input type="date" class="form-control" id="formDate" required />
-          <div class="invalid-feedback">Is necesary to select a date</div>
+          <div class="invalid-feedback">
+            Es necesario seleccionar una fecha.
+          </div>
         </div>
         <section class="mb-3 border border-dark">
           <div class="ms-3">
-            <h2 class="mb-3">Owner information:</h2>
+            <h2 class="mb-3">Información del propietario:</h2>
             <div class="ms-3">
               <div class="mb-3 row">
                 <div class="col">
+                  <label for="txtOwnerName">Nombre</label>
                   <input
                     type="text"
-                    class="form-control w-50"
+                    class="form-control w-75"
                     id="txtOwnerName"
-                    placeholder="Owner's name"
                     required
                   />
                   <div class="invalid-feedback">
-                    Is necesary to entry a name
+                    Es necesario ingresar un nombre de propietario
                   </div>
                 </div>
                 <div class="col from-group">
+                  <label>Cedula</label>
                   <input
                     type="number"
-                    class="form-control w-50"
+                    class="form-control w-75"
                     id="txtIdentification"
-                    placeholder="Owner identification"
                     required
                   />
-                  <div class="invalid-feedback">Is necesary to entry an id</div>
+                  <div class="invalid-feedback">
+                    Es necesario ingresar la cedula de identidad
+                  </div>
                 </div>
               </div>
               <div class="mb-3 row">
                 <div class="col">
                   <div>
+                    <label>Numero de telefono</label>
                     <input
                       type="number"
-                      class="form-control w-50"
+                      class="form-control w-75"
                       id="txtPhone"
-                      placeholder="Phone number"
                       required
                     />
                     <div class="invalid-feedback">
-                      Is necesary to entry a phone number
+                      Es necesario ingresar un numero de telefono
                     </div>
                   </div>
                   <div class="mt-3">
+                    <label>Segundo numero de telefono (opcional)</label>
                     <input
                       type="number"
-                      class="form-control w-50"
+                      class="form-control w-75"
                       id="txtOptPhone"
-                      placeholder="Optional phone number"
                     />
                     <div class="valid-feedback">
-                      Optional phone number can be empty
-                    </div>
-                    <div class="invalid-feedback">
-                      Is necesary to entry a optional phone number
+                      Numero de telefono opcional puede estar vacio
                     </div>
                   </div>
                 </div>
                 <div class="col">
+                  <label>Email</label>
                   <input
                     type="email"
-                    class="form-control w-50"
+                    class="form-control w-75"
                     id="txtEmail"
-                    placeholder="Email"
                     required
                   />
                   <div class="invalid-feedback">
-                    Is necesary to entry a valid email
+                    Es necesario ingresar un correo electronico valido
                   </div>
                 </div>
               </div>
               <div class="mb-3 row">
+                <label>Direccion</label>
                 <input
                   class="form-control w-75 ms-2"
                   type="text"
                   id="txtAddress"
-                  placeholder="Address"
                   required
                 />
                 <div class="invalid-feedback">
-                  Is necesary to entry an address
+                  Es necesario ingresar una direccion de domicilio
                 </div>
               </div>
             </div>
@@ -117,56 +163,57 @@
 
         <section class="mb-3 border border-dark">
           <div class="ms-3">
-            <h2 class="mb-3">Property location:</h2>
+            <h2 class="mb-3">Ubicacion de la propiedad</h2>
             <div class="ms-3">
               <div class="mb-3 row">
                 <div class="col">
+                  <label>Distrito</label>
                   <input
                     type="text"
-                    class="form-control w-50"
+                    class="form-control w-75"
                     id="txtDistrict"
-                    placeholder="District"
                     required
                   />
                   <div class="invalid-feedback">
-                    Is necesary to entry a valid district
+                    Es necesario ingresar un distrito valido
                   </div>
                 </div>
                 <div class="col">
+                  <label>Vencindario</label>
                   <input
                     type="text"
-                    class="form-control w-50"
+                    class="form-control w-75"
                     id="txtNeighborhood"
-                    placeholder="Neighborhood"
                     required
                   />
                   <div class="invalid-feedback">
-                    Is necesary to entry a neighborhood
+                    Es necesario ingresar un nombre de vecindario
                   </div>
                 </div>
               </div>
               <div class="mb-3 row">
+                <label>Direccion exacta</label>
                 <input
                   type="text"
                   class="w-75 form-control ms-2"
                   id="txtExactAddress"
-                  placeholder="Exact address"
                   required
                 />
                 <div class="invalid-feedback">
-                  Is necesary to entry an exact address
+                  Es necesario ingresar la direccion exacta de la propiedad
                 </div>
               </div>
               <div class="mb-3 row">
+                <label>Otras senas</label>
                 <input
                   type="text"
                   class="w-75 form-control ms-2"
                   id="txtOtherSings"
-                  placeholder="Other signs"
                   required
                 />
                 <div class="invalid-feedback">
-                  Is necesary to entry more datails
+                  Es necesario ingresar mas informacion sobre la direccion de la
+                  propiedad
                 </div>
               </div>
             </div>
@@ -175,58 +222,58 @@
 
         <section class="mb-3 border border-dark">
           <div class="ms-3">
-            <h2 class="mb-3">Inscription in the public registry</h2>
+            <h2 class="mb-3">Inscripcion al registro publico</h2>
 
             <div class="ms-3">
               <div class="mb-3 row">
                 <div class="col">
+                  <label>Folio</label>
                   <input
                     type="text"
-                    class="form-control w-50"
+                    class="form-control w-75"
                     id="txtFolio"
-                    placeholder="Folio:"
                     required
                   />
                   <div class="invalid-feedback">
-                    Is necesary to entry a valid folio
+                    Es necesario ingresar un folio
                   </div>
                 </div>
                 <div class="col">
+                  <label>Frente a calle publica (mts)</label>
                   <input
                     type="number"
-                    class="form-control w-50"
+                    class="form-control w-75"
                     id="txtPublicStreet"
-                    placeholder="In front of public street (mts):"
                     required
                   />
                   <div class="invalid-feedback">
-                    Is necesary to entrer a valid number of meters
+                    Es necesario ingresar distancia a la calle
                   </div>
                 </div>
               </div>
               <div class="mb-3 row">
                 <div class="col">
+                  <label>Area del terreno (mts2)</label>
                   <input
                     type="number"
                     id="txtLandArea"
-                    class="form-control w-50"
-                    placeholder="Land area (mts2)"
+                    class="form-control w-75"
                     required
                   />
                   <div class="invalid-feedback">
-                    Is necesary to entry a valid land area information
+                    Es necesario ingresar la medida del terreno
                   </div>
                 </div>
                 <div class="col">
+                  <label>Numero de plan registrado</label>
                   <input
                     type="number"
                     id="txtPlanNumber"
-                    class="form-control w-50"
-                    placeholder="Registered plan number"
+                    class="form-control w-75"
                     required
                   />
                   <div class="invalid-feedback">
-                    Is necesary to entry a valid plan number
+                    Es necesario ingresar un numero de plan registrado
                   </div>
                 </div>
               </div>
@@ -236,7 +283,7 @@
 
         <section class="mb-3 border border-dark">
           <div class="ms-3">
-            <h2 class="mb-3">Permission for:</h2>
+            <h2 class="mb-3">Permiso para:</h2>
             <div class="ms-3">
               <div class="form-check">
                 <input
@@ -246,7 +293,7 @@
                   name="tggPermisionFor"
                   checked
                 />
-                <label class="form-check-label" for="radio1">Build</label>
+                <label class="form-check-label" for="radio1">Construir</label>
               </div>
               <div class="form-check">
                 <input
@@ -255,7 +302,7 @@
                   id="radio2"
                   name="tggPermisionFor"
                 />
-                <label class="form-check-label" for="radio2">Remodel</label>
+                <label class="form-check-label" for="radio2">Remodelar</label>
               </div>
               <div class="form-check">
                 <input
@@ -264,7 +311,7 @@
                   id="radio3"
                   name="tggPermisionFor"
                 />
-                <label class="form-check-label" for="radio3">Demolition</label>
+                <label class="form-check-label" for="radio3">Demoler</label>
               </div>
               <div class="form-check mb-3">
                 <input
@@ -274,12 +321,12 @@
                   name="tggPermisionFor"
                 />
                 <label class="form-check-label" for="radioPermisionFor"
-                  >Other</label
+                  >Otro</label
                 >
                 <input
                   type="text"
                   id="inputPermisionFor"
-                  class="form-control w-25"
+                  class="form-control w-75"
                   disabled
                 />
                 <div
@@ -292,9 +339,9 @@
         </section>
 
         <section class="mb-3 border border-dark">
-          <div class="ms-3">
-            <h2>Kind of work</h2>
-            <div class="ms-3">
+          <div class="ms-3 row">
+            <h2>Tipo de obra</h2>
+            <div class="ms-3 col">
               <div class="form-check">
                 <input
                   type="radio"
@@ -304,7 +351,7 @@
                   checked
                 />
                 <label class="form-check-label" for="radio5"
-                  >Living place</label
+                  >Casa habitacion</label
                 >
               </div>
               <div class="form-check">
@@ -314,7 +361,7 @@
                   id="radio6"
                   name="kindRad"
                 />
-                <label class="form-check-label" for="radio6">Offices</label>
+                <label class="form-check-label" for="radio6">Oficinas</label>
               </div>
               <div class="form-check">
                 <input
@@ -323,7 +370,7 @@
                   id="radio7"
                   name="kindRad"
                 />
-                <label class="form-check-label" for="radio7">Shop</label>
+                <label class="form-check-label" for="radio7">Tienda</label>
               </div>
               <div class="form-check">
                 <input
@@ -333,7 +380,7 @@
                   name="kindRad"
                 />
                 <label class="form-check-label" for="radio8"
-                  >Urbanization</label
+                  >Urbanizacion</label
                 >
               </div>
               <div class="form-check">
@@ -344,7 +391,7 @@
                   name="kindRad"
                 />
                 <label class="form-check-label" for="radio9"
-                  >Housing complex</label
+                  >Complejo de viviendas</label
                 >
               </div>
               <div class="form-check">
@@ -354,9 +401,40 @@
                   id="radio10"
                   name="kindRad"
                 />
+                <label class="form-check-label" for="radio10">Condominio</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio11"
+                  name="kindRad"
+                />
                 <label class="form-check-label" for="radio10"
-                  >Condominium</label
+                  >Empresa de turismo</label
                 >
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio12"
+                  name="kindRad"
+                />
+                <label class="form-check-label" for="radio10"
+                  >Empresa de deportiva</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="radio13"
+                  name="kindRad"
+                />
+                <label class="form-check-label" for="radio10">Parqueo</label>
               </div>
               <div class="form-check mb-3">
                 <input
@@ -366,12 +444,12 @@
                   name="kindRad"
                 />
                 <label class="form-check-label" for="radioKindOfWork"
-                  >Other</label
+                  >Otro</label
                 >
                 <input
                   type="text"
                   id="inputKindOfWork"
-                  class="form-control w-25"
+                  class="form-control w-75"
                   disabled
                 />
                 <div
@@ -385,32 +463,30 @@
 
         <section class="mb-3 border border-dark">
           <div class="ms-3">
-            <h2 class="mb-3">Building area</h2>
+            <h2 class="mb-3">Área de construcción</h2>
             <div class="ms-3 mb-3">
               <div class="row mb-3">
-                <div class="ms-3">
-                  <input
-                    type="number"
-                    id="txtSquareMts"
-                    class="form-control w-25"
-                    placeholder="Square meter"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Is necesary to entry a valid building area
-                  </div>
+                <label>Square meter</label>
+                <input
+                  type="number"
+                  id="txtSquareMts"
+                  class="form-control w-50"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Es necesario ingresar la medida del area de construccion
                 </div>
               </div>
-              <div class="row ms-3">
+              <div class="row">
+                <label>Cantidad de pisos</label>
                 <input
                   type="number"
                   id="txtNumberFloors"
-                  class="form-control w-25"
-                  placeholder="Number of floors"
+                  class="form-control w-50"
                   required
                 />
                 <div class="invalid-feedback">
-                  Is necesary to entry number of floors
+                  Es necesario ingresar la cantidad de pisos
                 </div>
               </div>
             </div>
@@ -418,33 +494,31 @@
         </section>
 
         <section class="mb-3 border border-dark">
-          <div class="ms-3">
-            <h2 class="mb-3">Value of the work</h2>
-            <div class="ms-3 mb-3">
+          <div class="ms-3 mb-3">
+            <h2 class="mb-3">Valor de la obra</h2>
+            <div class="ms-3">
               <div class="row mb-3">
-                <div class="ms-3">
-                  <input
-                    type="number"
-                    id="txtTotalCost"
-                    class="form-control w-25"
-                    placeholder="Total cost"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Is necesary to entry the total cost
-                  </div>
+                <label>Costo total ₡</label>
+                <input
+                  type="number"
+                  id="txtTotalCost"
+                  class="form-control w-50"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Es necesario ingresar el costo total de la obra
                 </div>
               </div>
-              <div class="row ms-3">
+              <div class="row">
+                <label>Valor del metro cuadrado ₡</label>
                 <input
                   type="number"
                   id="txtValueM2"
-                  class="form-control w-25"
-                  placeholder="Value m2"
+                  class="form-control w-50"
                   required
                 />
                 <div class="invalid-feedback">
-                  Is necesary to entry the square meter value
+                  Es necesario ingresar el valor del metro cuadrado
                 </div>
               </div>
             </div>
@@ -453,10 +527,12 @@
 
         <section class="mb-3 border border-dark">
           <div class="ms-3">
-            <h2 class="mb-3">Predominant materials</h2>
+            <h2 class="mb-3">Principales materiales</h2>
             <div class="row">
-              <div class="col d-flex justify-content-center align-items-center">
-                <label>Floors</label>
+              <div
+                class="col-3 d-flex justify-content-center align-items-center"
+              >
+                <label>Pisos</label>
               </div>
               <div class="col">
                 <div class="container-fluid">
@@ -470,7 +546,7 @@
                         checked
                       />
                       <label class="form-check-label" for="radioA"
-                        >Concrete</label
+                        >Concreto</label
                       >
                     </div>
                     <div class="col form-check">
@@ -481,7 +557,7 @@
                         name="kindFloor"
                       />
                       <label class="form-check-label" for="radioB"
-                        >Mosaic</label
+                        >Mosaico</label
                       >
                     </div>
                     <div class="col form-check">
@@ -492,7 +568,7 @@
                         name="kindFloor"
                       />
                       <label class="form-check-label" for="radioC"
-                        >Ceramics</label
+                        >Ceramica</label
                       >
                     </div>
                   </div>
@@ -507,7 +583,7 @@
                         value="luxurious"
                       />
                       <label class="form-check-label" for="radioD"
-                        >Luxurious</label
+                        >Lujado</label
                       >
                     </div>
                     <div class="col form-check">
@@ -518,7 +594,9 @@
                         name="kindFloor"
                         value="wood"
                       />
-                      <label class="form-check-label" for="radioE">Wood</label>
+                      <label class="form-check-label" for="radioE"
+                        >Madera</label
+                      >
                     </div>
                     <div class="col form-check">
                       <input
@@ -528,11 +606,11 @@
                         name="kindFloor"
                       />
                       <label class="form-check-label" for="radioKindOfFloors"
-                        >Other</label
+                        >Otro</label
                       >
                       <input
                         type="text"
-                        class="form-control"
+                        class="form-control w-auto"
                         id="inputKindOfFloors"
                         disabled
                       />
@@ -547,8 +625,10 @@
             </div>
 
             <div class="mt-3 row">
-              <div class="col d-flex justify-content-center align-items-center">
-                <label>Walls</label>
+              <div
+                class="col-3 d-flex justify-content-center align-items-center"
+              >
+                <label>Paredes</label>
               </div>
               <div class="col">
                 <div class="container-fluid">
@@ -575,7 +655,7 @@
                         value="prefabricated"
                       />
                       <label class="form-check-label" for="radioAB"
-                        >Prefabricated</label
+                        >Prefabricado</label
                       >
                     </div>
                     <div class="col form-check">
@@ -601,7 +681,7 @@
                         value="baseboard"
                       />
                       <label class="form-check-label" for="radioAD"
-                        >Baseboard</label
+                        >Zocalo</label
                       >
                     </div>
                     <div class="col form-check">
@@ -612,7 +692,9 @@
                         name="kindWalls"
                         value="wood"
                       />
-                      <label class="form-check-label" for="radioAE">Wood</label>
+                      <label class="form-check-label" for="radioAE"
+                        >Madera</label
+                      >
                     </div>
                     <div class="col form-check">
                       <input
@@ -623,11 +705,11 @@
                         value="other"
                       />
                       <label class="form-check-label" for="radioKindOfWalls"
-                        >Other</label
+                        >Otro</label
                       >
                       <input
                         type="text"
-                        class="form-control"
+                        class="form-control w-auto"
                         id="inputKindOfWalls"
                         disabled
                       />
@@ -641,8 +723,10 @@
               </div>
             </div>
             <div class="mt-3 row">
-              <div class="col d-flex justify-content-center align-items-center">
-                <label>Roof</label>
+              <div
+                class="col-3 d-flex justify-content-center align-items-center"
+              >
+                <label>Techo</label>
               </div>
               <div class="col">
                 <div class="mb-3 row">
@@ -656,7 +740,7 @@
                       checked
                     />
                     <label class="form-check-label" for="radioBA"
-                      >Galvanized iron</label
+                      >Acero galvanizado</label
                     >
                   </div>
                   <div class="col form-check">
@@ -668,7 +752,7 @@
                       value="galvanizedTile"
                     />
                     <label class="form-check-label" for="radioBB"
-                      >Galvanized tile</label
+                      >Teja galvanizada</label
                     >
                   </div>
                   <div class="col form-check">
@@ -680,7 +764,7 @@
                       value="polycarbonate"
                     />
                     <label class="form-check-label" for="radioBC"
-                      >Polycarbonate</label
+                      >Policarbonato</label
                     >
                   </div>
                 </div>
@@ -695,7 +779,7 @@
                       value="structuralSheet"
                     />
                     <label class="form-check-label" for="radioBD"
-                      >Structural sheet</label
+                      >Lamina estructural</label
                     >
                   </div>
                   <div class="col form-check">
@@ -706,9 +790,7 @@
                       name="kindRoof"
                       value="roofTile"
                     />
-                    <label class="form-check-label" for="radioBE"
-                      >Roof tile</label
-                    >
+                    <label class="form-check-label" for="radioBE">Teja</label>
                   </div>
                   <div class="col form-check">
                     <input
@@ -717,7 +799,7 @@
                       id="radioKindOfRoof"
                       name="kindRoof"
                       value="other"
-                    />Other
+                    />Otro
                     <label
                       class="form-check-label"
                       for="radioKindOfRoof"
@@ -725,7 +807,7 @@
                     <input
                       type="text"
                       id="inputKindOfRoof"
-                      class="form-control"
+                      class="form-control w-auto"
                       disabled
                     />
                     <div
@@ -741,7 +823,7 @@
 
         <section class="mb-3 border border-dark">
           <div class="ms-3">
-            <h2 class="mb-3">Estimated duration of the work to be done</h2>
+            <h2 class="mb-3">Duracion estimada de los trabajos a realizar</h2>
             <div class="ms-3">
               <div class="row mb-3">
                 <div class="col form-check">
@@ -750,14 +832,13 @@
                     class="form-check-input"
                     id="radioTimeD"
                     name="time"
-                    value="days"
                     checked
                   />
+                  <label for="inputTimeD">Dias</label>
                   <input
                     type="number"
                     id="inputTimeD"
-                    class="w-50 form-control"
-                    placeholder="Days"
+                    class="w-auto form-control"
                   />
                   <div id="errorMsgTimeD" class="form-text text-danger"></div>
                 </div>
@@ -769,11 +850,11 @@
                     name="time"
                     value="months"
                   />
+                  <label for="inputTimeM">Meses</label>
                   <input
                     type="number"
                     id="inputTimeM"
-                    class="w-50 form-control"
-                    placeholder="Months"
+                    class="w-auto form-control"
                     disabled
                   />
                   <div id="errorMsgTimeM" class="form-text text-danger"></div>
@@ -786,11 +867,11 @@
                     name="time"
                     value="years"
                   />
+                  <label for="inputTimeY">Años</label>
                   <input
                     type="number"
                     id="inputTimeY"
-                    class="w-50 form-control"
-                    placeholder="Years"
+                    class="w-auto form-control"
                     disabled
                   />
                   <div id="errorMsgTimeY" class="form-text text-danger"></div>
@@ -804,7 +885,7 @@
           <div class="ms-3">
             <div class="w-75 row">
               <div class="col">
-                <h2 class="mb-3">Sidewalk closure</h2>
+                <h2 class="mb-3">Cierre de la acera</h2>
                 <div class="ms-3">
                   <div class="row">
                     <div class="col form-check">
@@ -816,11 +897,11 @@
                         value="days"
                         checked
                       />
+                      <label for="inputSideCloseD">Days</label>
                       <input
                         type="number"
                         id="inputSideCloseD"
-                        class="w-50 form-control"
-                        placeholder="Days"
+                        class="w-auto form-control"
                       />
                       <div
                         id="errorMsgSideCloseD"
@@ -836,11 +917,11 @@
                         name="sideClose"
                         value="months"
                       />
+                      <label for="inputSideCloseM">Meses</label>
                       <input
                         type="number"
                         id="inputSideCloseM"
-                        class="w-50 form-control"
-                        placeholder="Months"
+                        class="w-auto form-control"
                         disabled
                       />
                       <div
@@ -853,29 +934,29 @@
 
                 <div class="col form-check">
                   <div class="row mb-3">
-                    <h3>Date</h3>
+                    <h3>Fecha</h3>
                     <div class="col">
-                      <label>From: </label>
+                      <label>Desde: </label>
                       <input
                         type="date"
-                        class="form-control w-50"
+                        class="form-control w-auto"
                         id="sideCloseFrom"
                         required
                       />
                       <div class="invalid-feedback">
-                        Is necesary to entry a valid date
+                        Es necesario ingresar una fecha de inicio
                       </div>
                     </div>
                     <div class="col">
-                      <label>To: </label>
+                      <label>Hasta: </label>
                       <input
                         type="date"
-                        class="form-control w-50"
+                        class="form-control w-auto"
                         id="sideCloseTo"
                         required
                       />
                       <div class="invalid-feedback">
-                        Is necesary to entry a valid date
+                        Es necesario ingresar una fecha de finalizacion
                       </div>
                     </div>
                   </div>
@@ -887,7 +968,7 @@
 
         <section class="border border-dark">
           <div class="ms-3">
-            <h2 class="mb-3">Financing</h2>
+            <h2 class="mb-3">Financiamiento</h2>
             <div class="ms-3">
               <div class="row">
                 <div class="col form-check">
@@ -900,7 +981,7 @@
                     checked
                   />
                   <label class="form-check-label" for="financingBank"
-                    >Bank</label
+                    >Banco</label
                   >
                 </div>
                 <div class="col form-check">
@@ -912,7 +993,7 @@
                     value="housingBonus"
                   />
                   <label class="form-check-label" for="financingHouBonus"
-                    >Housing bonus</label
+                    >Bono de vivienda</label
                   >
                 </div>
                 <div class="col form-check">
@@ -924,7 +1005,7 @@
                     value="exonerated"
                   />
                   <label class="form-check-label" for="financingExon"
-                    >Exonerated</label
+                    >Exonerado</label
                   >
                 </div>
                 <div class="col form-check">
@@ -936,11 +1017,11 @@
                     value="other"
                   />
                   <label class="form-check-label" for="radioFinancing"
-                    >Other</label
+                    >Otro</label
                   >
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control w-auto"
                     id="inputFinancing"
                     disabled
                   />
@@ -959,32 +1040,80 @@
           <div class="row mb-5 mt-5">
             <div class="col">
               <label
-                >Name and signature of the professional responsible for the
-                work</label
+                >Nombre y firma del profesional responsable del trabajar</label
               >
             </div>
             <div class="col">
-              <label>Identification</label>
+              <label>Cedula</label>
             </div>
           </div>
 
           <div class="row mb-5">
             <div class="col">
-              <label>Owner's signature</label>
+              <label>Firma del propietario</label>
             </div>
             <div class="col">
-              <label>Identification</label>
+              <label>Cedula</label>
             </div>
           </div>
         </section>
 
-        <div class="d-flex justify-content-center">
-          <button type="submit" class="btn btn-primary w-50">Submit</button>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 col-sm-12">
+            <button
+              type="submit"
+              class="btn btn-primary w-100 mb-3"
+              onclick="submitForm()"
+              id="btnSubmit"
+            >
+              Enviar
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <a
+              href="../archives/J&A_Formulario.pdf"
+              download="J&A_Formulario"
+              class="btn btn-success mb-5 w-100"
+              id="sendForm"
+              onclick="sendForm()"
+              >Descargar formulario (vacio en formato pdf)</a
+            >
+          </div>
         </div>
       </form>
     </div>
 
+    <footer class="text-white row text-center bg-secondary pt-3">
+      <p>© 2024 J&A S.A. Todos los derechos reservados.</p>
+    </footer>
+
     <script>
+      function submitForm() {
+        var formSent = document.getElementById("btnSubmit");
+        formSent.classList.add("animate__animated", "animate__bounceOut");
+
+        formSent.addEventListener("animationend", function () {
+          formSent.classList.remove("animate__animated", "animate__bounceOut");
+        });
+      }
+    </script>
+
+    <script>
+      function sendForm() {
+        var formSent = document.getElementById("sendForm");
+        formSent.classList.add("animate__animated", "animate__bounceOutRight");
+
+        formSent.addEventListener("animationend", function () {
+          formSent.classList.remove(
+            "animate__animated",
+            "animate__bounceOutRight"
+          );
+        });
+      }
+    </script>
+
+    <script>
+      //scrip to evaluate empty inputs
       (() => {
         "use strict";
 
@@ -1008,7 +1137,8 @@
     </script>
 
     <script>
-      // Obtén el formulario y los elementos relevantes
+      //Script to evaluate the inputs next to each radio button
+
       const myFirstForm = document.getElementById("myForm");
       const radioPermision = document.getElementById("radioPermisionFor");
       const radioKindWork = document.getElementById("radioKindOfWork");
@@ -1216,10 +1346,7 @@
       });
 
       myFirstForm.addEventListener("submit", function (event) {
-        if (
-          radioFinancing.checked &&
-          inputFinancing.value.trim() === ""
-        ) {
+        if (radioFinancing.checked && inputFinancing.value.trim() === "") {
           errorMsgFinance.textContent =
             "Is necesary to add more information here.";
           event.preventDefault();
