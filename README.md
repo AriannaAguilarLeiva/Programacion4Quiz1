@@ -57,19 +57,19 @@ Con base a las instrucciones desarollamos las páginas:
 
  Boostrap es una herramienta útil para el diseño de páginas web. Brinda formatos para botones, formularios, alertas, entre otros. Además, su sistema hace que sea fácil adaptar las pantallas de nuestro sitio web en diferentes dispositivos. Para esto, debemos entender el sistema de contenedores filas, columnas y puntos de interrupción.
 
-Contenedores
+Contenedores: 
 Son los que envuelven, rellenan y alinean el contenido. Básicamente van a contener las filas y columnas que se establezcan.
 
-Filas
+Filas: 
 Son las que envuelven las columnas. Es importante saber que las filas cuentan con hasta 12 columnas.
 
-Columnas
+Columnas: 
 Son las que envuelven el contenido. Para las columnas podemos establecer diferentes tamaños, es decir, una fila puede tener 1 columna que abarque toda la fila, o podemos tener 3 columnas que abarquen toda esa misma fila. Sino les damos un tamaño en específico, ellas adoptan el tamaño por defecto, quedando todas del mismo tamaño.
 Si queremos establecer los tamaños, como máximo podemos tener 12 columnas. En caso de necesitar menos, se pueden ajustar, para que la suma de ellas sea 12, por ejemplo: 2 columnas, pero una con tamaño de 8 y otra de 4. 
 
 Nota: Las columnas pueden envolver una fila y dentro de esta fila, volver a hacer la lógica de las columnas. 
 
-Puntos de interrupción
+Puntos de interrupción: 
 Los puntos de interrupción son para hacer que, dependiendo del tamaño del dispositivo, se vea o acomode el contenido de la página, de forma que sea más atractiva para el usuario.
 Puntos de interrupción: sm, md, lg, xl, xxl. Cada uno de ellos cuenta con dimensiones, por lo que se podría decir, que representan un tamaño de dispositivo. Con estas dimensiones, se modifican las columnas para adaptarse a los diferentes dispositivos. Si tengo 2 columnas, una de 6 y otra de 6, pero quiero que en un dispositivo md, las 2 columnas me abarquen todo el ancho de la pantalla cada una, podemos hacer col-md-12 en cada columna. De esta forma cuando la pantalla tenga las dimensiones de md, se verá 1 columna con todo el ancho de la pantalla y no 2 columnas por fila.
 
