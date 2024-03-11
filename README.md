@@ -1,7 +1,7 @@
 # Programacion4Quiz1
 El sitio web final esta publicado en: https://dulcet-blancmange-2f30bd.netlify.app/
 
-Para poder usar boostrap:
+Para poder usar Bootstrap :
 
 Una vez creado y clonado el repositorio se hicieron las siguientes configuraciones en el proyecto:
 
@@ -26,7 +26,7 @@ npm -v
     
 
 
-Una vez que tenemos lista la instalacion de boostrap, se siguen las siguientes instrucciones para crear nuestro proyecto:
+Una vez que tenemos lista la instalacion de Bootstrap , se siguen las siguientes instrucciones para crear nuestro proyecto:
 
 Diseña y desarrolla un sitio web de 3 páginas siguiendo las especificaciones dadas:
 
@@ -52,10 +52,10 @@ Con base a las instrucciones desarollamos las páginas:
  service_offered.html para la explicativa.
  form .html para el formulario web.
 
- Recordemos que utilizamos Boostrap, así que investigamos el sistema layout de Boostrap.
+ Recordemos que utilizamos Bootstrap , así que investigamos el sistema layout de Bootstrap.
  Un resumen de lo que entendimos:
 
- Boostrap es una herramienta útil para el diseño de páginas web. Brinda formatos para botones, formularios, alertas, entre otros. Además, su sistema hace que sea fácil adaptar las pantallas de nuestro sitio web en diferentes dispositivos. Para esto, debemos entender el sistema de contenedores filas, columnas y puntos de interrupción.
+ Bootstrap  trap es una herramienta útil para el diseño de páginas web. Brinda formatos para botones, formularios, alertas, entre otros. Además, su sistema hace que sea fácil adaptar las pantallas de nuestro sitio web en diferentes dispositivos. Para esto, debemos entender el sistema de contenedores filas, columnas y puntos de interrupción.
 
 Contenedores: 
 Son los que envuelven, rellenan y alinean el contenido. Básicamente van a contener las filas y columnas que se establezcan.
