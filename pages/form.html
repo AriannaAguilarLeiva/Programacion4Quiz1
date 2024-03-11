@@ -14,26 +14,44 @@
     />
   </head>
   <body class="bg-secondary">
-
-    <header class="row bg-secondary text-center  border-bottom border-white   ">
+    <header class="row bg-secondary text-center border-bottom border-white">
       <div>
-          <h1 class="text-white pt-2">Agencia asesora de servicios de construcción J&A</h1>
+        <h1 class="text-white pt-2">
+          Agencia asesora de servicios de construcción J&A
+        </h1>
       </div>
       <div class="d-flex justify-content-center">
-          <ul class="list-unstyled d-flex mt-2">
-              <li>
-                  <a href="#"><img class="img-fluid mx-1" src="../img/facebook.png" alt="Logo de facebook" width="50px"></a>
-              </li>
-              <li>
-                  <a href="#"><img class="img-fluid mx-1" src="../img/instagram.png" alt="Logo de instagram" width="50px"></a>
-              </li>
-              <li>
-                  <a href="#"><img class="img-fluid mx-1" src="../img/youtube.png" alt="Logo de youtube" width="50px"></a>
-              </li>
-          </ul>
+        <ul class="list-unstyled d-flex mt-2">
+          <li>
+            <a href="#"
+              ><img
+                class="img-fluid mx-1"
+                src="../img/facebook.png"
+                alt="Logo de facebook"
+                width="50px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="img-fluid mx-1"
+                src="../img/instagram.png"
+                alt="Logo de instagram"
+                width="50px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="img-fluid mx-1"
+                src="../img/youtube.png"
+                alt="Logo de youtube"
+                width="50px"
+            /></a>
+          </li>
+        </ul>
       </div>
-  </header>
-
+    </header>
 
     <div class="container mt-5 bg-body-secondary">
       <div class="d-flex justify-content-center">
@@ -54,7 +72,9 @@
         <div class="w-25 mb-3 row ms-1">
           <label for="formDate" class="form-label">Fecha del formulario:</label>
           <input type="date" class="form-control" id="formDate" required />
-          <div class="invalid-feedback">Es necesario seleccionar una fecha.</div>
+          <div class="invalid-feedback">
+            Es necesario seleccionar una fecha.
+          </div>
         </div>
         <section class="mb-3 border border-dark">
           <div class="ms-3">
@@ -81,7 +101,9 @@
                     id="txtIdentification"
                     required
                   />
-                  <div class="invalid-feedback">Es necesario ingresar la cedula de identidad</div>
+                  <div class="invalid-feedback">
+                    Es necesario ingresar la cedula de identidad
+                  </div>
                 </div>
               </div>
               <div class="mb-3 row">
@@ -190,7 +212,8 @@
                   required
                 />
                 <div class="invalid-feedback">
-                  Es necesario ingresar mas informacion sobre la direccion de la propiedad
+                  Es necesario ingresar mas informacion sobre la direccion de la
+                  propiedad
                 </div>
               </div>
             </div>
@@ -378,9 +401,7 @@
                   id="radio10"
                   name="kindRad"
                 />
-                <label class="form-check-label" for="radio10"
-                  >Condominio</label
-                >
+                <label class="form-check-label" for="radio10">Condominio</label>
               </div>
             </div>
             <div class="col">
@@ -391,7 +412,9 @@
                   id="radio11"
                   name="kindRad"
                 />
-                <label class="form-check-label" for="radio10">Empresa de turismo</label>
+                <label class="form-check-label" for="radio10"
+                  >Empresa de turismo</label
+                >
               </div>
               <div class="form-check">
                 <input
@@ -400,7 +423,9 @@
                   id="radio12"
                   name="kindRad"
                 />
-                <label class="form-check-label" for="radio10">Empresa de deportiva</label>
+                <label class="form-check-label" for="radio10"
+                  >Empresa de deportiva</label
+                >
               </div>
               <div class="form-check">
                 <input
@@ -569,7 +594,9 @@
                         name="kindFloor"
                         value="wood"
                       />
-                      <label class="form-check-label" for="radioE">Madera</label>
+                      <label class="form-check-label" for="radioE"
+                        >Madera</label
+                      >
                     </div>
                     <div class="col form-check">
                       <input
@@ -665,7 +692,9 @@
                         name="kindWalls"
                         value="wood"
                       />
-                      <label class="form-check-label" for="radioAE">Madera</label>
+                      <label class="form-check-label" for="radioAE"
+                        >Madera</label
+                      >
                     </div>
                     <div class="col form-check">
                       <input
@@ -761,9 +790,7 @@
                       name="kindRoof"
                       value="roofTile"
                     />
-                    <label class="form-check-label" for="radioBE"
-                      >Teja</label
-                    >
+                    <label class="form-check-label" for="radioBE">Teja</label>
                   </div>
                   <div class="col form-check">
                     <input
@@ -1013,8 +1040,7 @@
           <div class="row mb-5 mt-5">
             <div class="col">
               <label
-                >Nombre y firma del profesional responsable del
-                trabajar</label
+                >Nombre y firma del profesional responsable del trabajar</label
               >
             </div>
             <div class="col">
@@ -1032,30 +1058,34 @@
           </div>
         </section>
 
-        <div class="d-flex justify-content-center col mb-5">
-          <button
-            type="submit"
-            class="btn btn-primary w-25 mb-5"
-            onclick="submitForm()"
-            id="btnSubmit"
-          >
-            Enviar
-          </button>
-          <a
-            href="/archives/J&A_Formulario.pdf"
-            download="J&A_Formulario"
-            class="btn btn-success ms-3 w-25 mb-5"
-            id="sendForm"
-            onclick="sendForm()"
-            >Descargar formulario (vacio en formato pdf)</a
-          >
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 col-sm-12">
+            <button
+              type="submit"
+              class="btn btn-primary w-100 mb-3"
+              onclick="submitForm()"
+              id="btnSubmit"
+            >
+              Enviar
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <a
+              href="/archives/J&A_Formulario.pdf"
+              download="J&A_Formulario"
+              class="btn btn-success mb-5 w-100"
+              id="sendForm"
+              onclick="sendForm()"
+              >Descargar formulario (vacio en formato pdf)</a
+            >
+          </div>
         </div>
       </form>
     </div>
 
-    <footer class="text-white row text-center bg-secondary pt-3 ">
+    <footer class="text-white row text-center bg-secondary pt-3">
       <p>© 2024 J&A S.A. Todos los derechos reservados.</p>
-  </footer>
+    </footer>
 
     <script>
       function submitForm() {
